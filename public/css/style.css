@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'karla', sans-serif;
+    text-align: center;
+	list-style-type: none;
+}
+
+body {
+	display: flex;
+}
+
+aside {
+	flex: 1;
+}
+
+main {
+	flex: 4;
+}
+
+.tabs {
+}
+
+.tabs li:not(.active) {
+	cursor: pointer;
+}
+
+.content {
+	height: 90vh;
+	position: relative;
+}
+
+.tabs li{
+	padding: 10px;
+	text-transform: lowercase;
+}
+
+.tabs li.active {
+	background-color: #2f90f7;
+	font-weight: bold;
+}
+
+button {
+	background-color: #2f90f7;
+	border-radius: 28px;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+}
+
+input {
+	border-radius: 28px;
+	border: solid 1px white;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+}
+
+.messages {
+	height: 100%;
+	overflow: scroll;
+}
+
+.writing {
+	position: absolute;
+	bottom: 0;
+}
+
+.messages div {
+	margin: 0;
+	padding: 10px;
+	color: white;
+}
+
+.messages :nth-child(odd) {
+	background-color: #aaa;
+}
+
+form {
+	display: flex;
+}
+
+.name {
+	flex: 1;
+	padding: 10px;
+}
+
+.message {
+	flex: 5;
+}
